@@ -9,6 +9,21 @@ public class MainController {
 	@GetMapping("/test1")
 	@ResponseBody
 	public String printHello() {
-		return "Hello";
+		return "hellol";
+	}
+	
+	@GetMapping("/learnmore")
+	public String printLearnMore() {
+		return "learnmore";
+	}
+	
+	@GetMapping("/index")
+	public String indexing() {
+		return "index";
+	}
+	
+	@GetMapping("/thankyou")
+	public String thankYou() {
+		return "thanks";
 	}
 }
