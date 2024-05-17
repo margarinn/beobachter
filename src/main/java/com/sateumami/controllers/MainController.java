@@ -12,7 +12,7 @@ public class MainController {
 		return "hello";
 	}
 	
-	@GetMapping("/learnmore")
+	@GetMapping("/learnmore.html")
 	public String printLearnMore() {
 		return "learnmore";
 	}
