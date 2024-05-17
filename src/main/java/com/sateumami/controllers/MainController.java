@@ -9,7 +9,7 @@ public class MainController {
 	@GetMapping("/test1")
 	@ResponseBody
 	public String printHello() {
-		return "hellol";
+		return "hello";
 	}
 	
 	@GetMapping("/learnmore")
