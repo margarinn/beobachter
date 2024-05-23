@@ -2,7 +2,11 @@ package com.sateumami.controllers;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.ModelAttribute;
+import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
+
+import com.sateumami.model.Feedback;
 
 @Controller
 public class MainController {
@@ -22,8 +26,9 @@ public class MainController {
 		return "index";
 	}
 	
-	@GetMapping("/thankyou")
-	public String thankYou() {
+	@PostMapping("/feedback")
+	public String userFeedback(@ModelAttribute Feedback feedback ) {
+		System.out.println(feedback.toString());
 		return "thanks";
 	}
 }
