@@ -21,6 +21,11 @@ public class MainController {
 		return "learnmore";
 	}
 	
+	@GetMapping("/login")
+	public String adminLogin() {
+		return "Login";
+	}
+	
 	@GetMapping("/index")
 	public String indexing() {
 		return "index";
