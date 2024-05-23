@@ -1,0 +1,4 @@
+TODO
+1. Create form to choose the menu user wants to buy.
+2. Connect to MongoDB Database
+3. Admin Login with OAuth2
