@@ -127,7 +127,7 @@ button,
 html input[type="button"],
 input[type="reset"],
 input[type="submit"] {
-  webkit-appearance: button;
+  -webkit-appearance: button;
   cursor: pointer;
 }
 button[disabled],
@@ -3471,7 +3471,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 .nav > li > a:hover,
 .nav > li > a:focus {
   text-decoration: none;
-  background-color: #777;
+  background-color: #eee;
 }
 .nav > li.disabled > a {
   color: #999;
@@ -3487,7 +3487,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 .nav .open > a:hover,
 .nav .open > a:focus {
   background-color: #eee;
-  border-color: #777;
+  border-color: #428bca;
 }
 .nav .nav-divider {
   height: 1px;
@@ -3580,7 +3580,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 .nav-pills > li.active > a:hover,
 .nav-pills > li.active > a:focus {
   color: #fff;
-  background-color: #ccc;
+  background-color: #428bca;
 }
 .nav-stacked > li {
   float: none;
@@ -4362,7 +4362,7 @@ a.badge:focus {
 }
 a.list-group-item.active > .badge,
 .nav-pills > .active > a > .badge {
-  color: #0099cc;
+  color: #428bca;
   background-color: #fff;
 }
 .nav-pills > li > a > .badge {
@@ -5828,4 +5828,3 @@ td.visible-print {
     display: none !important;
   }
 }
-/*# sourceMappingURL=bootstrap.css.map */
