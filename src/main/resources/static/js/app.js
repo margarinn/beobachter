@@ -35,3 +35,29 @@ document.querySelectorAll('.submitButton').forEach(function(button, index) {
       }
   });
 });
+
+document.querySelectorAll('.showInputButtonTambah').forEach(function(button, index) {
+  button.addEventListener('click', function() {
+      document.querySelectorAll('.inputContainerTambah')[index].style.display = 'block';
+  });
+});
+
+document.querySelectorAll('.cancelButtonTambah').forEach(function(button, index) {
+  button.addEventListener('click', function() {
+      document.querySelectorAll('.inputContainerTambah')[index].style.display = 'none';
+      document.querySelectorAll('.textInputTambah')[index].value = ''; // Clear the input field
+  });
+});
+
+document.querySelectorAll('.submitButtonTambah').forEach(function(button, index) {
+  button.addEventListener('click', function() {
+      const inputText = document.querySelectorAll('.textInputTambah')[index].value;
+      if (inputText) {
+          alert('Telah ditambah: ' + inputText);
+          document.querySelectorAll('.inputContainerTambah')[index].style.display = 'none';
+          document.querySelectorAll('.textInputTambah')[index].value = ''; // Clear the input field
+      } else {
+          alert('Text tidak boleh kosong.');
+      }
+  });
+});
