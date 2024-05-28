@@ -47,4 +47,9 @@ public class MainController {
 		return "DashboardAdmin";
 	}
 	
+	@GetMapping("/feedbacks")
+	public String feedbacks() {
+		return "menufeedback";
+	}
+	
 }
