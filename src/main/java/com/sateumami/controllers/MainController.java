@@ -36,4 +36,15 @@ public class MainController {
 		System.out.println(feedback.toString());
 		return "thanks";
 	}
+	
+	@GetMapping("/edit")
+	public String editing() {
+		return "EditMenu";
+	}
+	
+	@GetMapping("/admin")
+	public String beAdmin() {
+		return "DashboardAdmin";
+	}
+	
 }
