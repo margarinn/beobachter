@@ -173,7 +173,7 @@ tbody tr:hover {
   background: #014055;
 }
 
-.button, .showInputButton, .submitButton, .cancelButton, .textInput {
+.button, .showInputButton, .submitButton, .cancelButton, .textInput, .buttonkosongkan, .textInputTambah {
   background-color: #ffffff; /* Warna putih untuk kontras lembut */
   color: #223F97; /* Warna teks yang sama dengan latar belakang tabel */
   border: none;
@@ -186,6 +186,31 @@ tbody tr:hover {
   cursor: pointer;
   border-radius: 4px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.showInputButtonTambah, .cancelButtonTambah, .submitButtonTambah, .buttonTambah {
+  background-color: #28A745;
+  color: white; /* Warna teks yang sama dengan latar belakang tabel */
+  border: none;
+  padding: 5px 10px; /* Ukuran padding dikurangi untuk tombol yang lebih kecil */
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px; /* Ukuran font dikurangi */
+  margin: 2px 1px; /* Margin dikurangi */
+  cursor: pointer;
+  border-radius: 4px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.buttonkosongkan {
+  background-color: gray;
+  color: white;
+  border-radius: 0.5em;
+}
+
+.buttonkosongkan:hover {
+  background-color: #2F2F2F;
 }
 
 .button:hover {
