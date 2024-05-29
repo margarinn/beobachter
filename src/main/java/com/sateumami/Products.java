@@ -9,7 +9,7 @@ import org.springframework.data.annotation.Id;
 public class Products {
 	
 	@Id
-	private ObjectId Id;
+	private ObjectId id;
 	
 	private String nama;
 	
@@ -17,12 +17,14 @@ public class Products {
 	
 	private String gambar;
 	
-	public ObjectId getId() {
-		return Id;
-	}
 	
+
+	public ObjectId getId() {
+		return id;
+	}
+
 	public void setId(ObjectId id) {
-		Id = id;
+		this.id = id;
 	}
 
 	public String getNama() {
