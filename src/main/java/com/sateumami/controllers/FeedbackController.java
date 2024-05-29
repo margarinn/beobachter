@@ -12,24 +12,24 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.sateumami.products.Products;
-import com.sateumami.products.ProductsService;
+import com.sateumami.feedbacks.Feedback;
+import com.sateumami.feedbacks.FeedbackService;
 
 @RestController
-@RequestMapping("/api/v1/products")
-
-public class ProductController {
+@RequestMapping("/api/v1/feedbacks")
+public class FeedbackController {
 	@Autowired
-	private ProductsService productService;
+	private FeedbackService feedbackService;
 	
 	@GetMapping
-	public ResponseEntity<List<Products>> getAllProducts(){
-		return new ResponseEntity<List<Products>>(productService.allProducts(), HttpStatus.OK);
+	public ResponseEntity<List<Feedback>> getAllFeedbacks(){
+		return new ResponseEntity<List<Feedback>>(feedbackService.allFeedbacks(), HttpStatus.OK);
 	}
 	
 	@GetMapping("/{id}")
-	public ResponseEntity<Optional<Products>> getSingleProduct(@PathVariable ObjectId id){
-		return new ResponseEntity<Optional<Products>>(productService.singleProduct(id), HttpStatus.OK);
+	public ResponseEntity<Optional<Feedback>> getSingleFeedback(@PathVariable ObjectId id){
+		return new ResponseEntity<Optional<Feedback>>(feedbackService.singleFeedback(id), HttpStatus.OK);
 	}
 
+	
 }

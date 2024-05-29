@@ -1,4 +1,4 @@
-package com.sateumami;
+package com.sateumami.products;
 
 import java.util.List;
 import java.util.Optional;

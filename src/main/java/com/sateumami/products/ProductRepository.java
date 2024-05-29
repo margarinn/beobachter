@@ -1,4 +1,4 @@
-package com.sateumami;
+package com.sateumami.products;
 
 import org.bson.types.ObjectId;
 import org.springframework.data.mongodb.repository.MongoRepository;
