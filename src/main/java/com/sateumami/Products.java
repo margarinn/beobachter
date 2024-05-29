@@ -16,11 +16,11 @@ public class Products {
 	private String harga;
 	
 	private String gambar;
-
+	
 	public ObjectId getId() {
 		return Id;
 	}
-
+	
 	public void setId(ObjectId id) {
 		Id = id;
 	}
