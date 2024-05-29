@@ -147,7 +147,7 @@ body {
 
 table {
   background: #223F97;
-  border-radius: 0.75em;
+  border-radius: 1em;
   border-collapse: collapse;
 
 }
@@ -186,6 +186,7 @@ tbody tr:hover {
   cursor: pointer;
   border-radius: 4px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 1.5em;
 }
 
 .showInputButtonTambah, .cancelButtonTambah, .submitButtonTambah, .buttonTambah {
@@ -201,12 +202,13 @@ tbody tr:hover {
   cursor: pointer;
   border-radius: 4px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 1.5em;
 }
 
 .buttonkosongkan {
   background-color: gray;
   color: white;
-  border-radius: 0.5em;
+  border-radius: 1.5em;
 }
 
 .buttonkosongkan:hover {
