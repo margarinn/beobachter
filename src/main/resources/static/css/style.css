@@ -171,6 +171,7 @@ tbody tr {
 }
 tbody tr:hover {
   background: #014055;
+  border-radius: 1em;
 }
 
 .button, .showInputButton, .submitButton, .cancelButton, .textInput, .buttonkosongkan, .textInputTambah {
