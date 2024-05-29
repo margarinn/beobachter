@@ -6,7 +6,7 @@ import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
-import com.sateumami.model.Feedback;
+import com.sateumami.model.FeedbackModel;
 
 @Controller
 public class MainController {
@@ -32,7 +32,7 @@ public class MainController {
 	}
 	
 	@PostMapping("/feedback")
-	public String userFeedback(@ModelAttribute Feedback feedback ) {
+	public String userFeedback(@ModelAttribute FeedbackModel feedback ) {
 		System.out.println(feedback.toString());
 		return "thanks";
 	}
