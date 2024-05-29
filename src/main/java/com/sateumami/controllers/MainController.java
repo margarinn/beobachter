@@ -13,7 +13,7 @@ public class MainController {
 	@GetMapping("/test1")
 	@ResponseBody
 	public String printHello() {
-		return "hello";
+		return "why are we even here? just to suffer?";
 	}
 	
 	@GetMapping("/learnmore")
