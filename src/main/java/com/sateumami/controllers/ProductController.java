@@ -22,7 +22,7 @@ import com.sateumami.products.ProductsService;
 
 public class ProductController {
 	@Autowired
-	private ProductsService productService;
+	private ProductsService productService;	
 	
 	@GetMapping
 	public ResponseEntity<List<Products>> getAllProducts(){
