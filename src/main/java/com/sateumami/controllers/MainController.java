@@ -7,6 +7,7 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 import com.sateumami.model.FeedbackModel;
+import com.sateumami.model.LoginModel;
 
 @Controller
 public class MainController {
@@ -42,8 +43,8 @@ public class MainController {
 		return "EditMenu";
 	}
 	
-	@GetMapping("/admin")
-	public String beAdmin() {
+	@PostMapping("/admin")
+	public String beAdmin(@ModelAttribute LoginModel login) {
 		return "DashboardAdmin";
 	}
 	
