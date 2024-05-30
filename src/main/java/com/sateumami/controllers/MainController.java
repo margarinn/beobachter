@@ -12,9 +12,8 @@ import com.sateumami.model.LoginModel;
 @Controller
 public class MainController {
 	@GetMapping("/test1")
-	@ResponseBody
 	public String printHello() {
-		return "why are we even here? just to suffer?";
+		return "home";
 	}
 	
 	@GetMapping("/learnmore")
