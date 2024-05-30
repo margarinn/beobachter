@@ -47,7 +47,7 @@ public class MainController {
 		return "DashboardAdmin";
 	}
 	
-	@GetMapping("/admin/admin")
+	@GetMapping("/readmin")
 	public String gotoAdmin() {
 		return "DashboardAdmin";
 	}
