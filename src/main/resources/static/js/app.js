@@ -10,54 +10,32 @@ $(document).ready(function(){
 
 });
 
-document.querySelectorAll('.showInputButton').forEach(function(button, index) {
-  button.addEventListener('click', function() {
-      document.querySelectorAll('.inputContainer')[index].style.display = 'block';
-  });
-});
+document.addEventListener('DOMContentLoaded', function() {
+  const showInputButtons = document.querySelectorAll('.showInputButton');
+  const inputContainers = document.querySelectorAll('.inputContainer');
+  const submitButtons = document.querySelectorAll('.submitButton');
+  const cancelButtons = document.querySelectorAll('.cancelButton');
+  const menuName = document.getElementById('menuName');
 
-document.querySelectorAll('.cancelButton').forEach(function(button, index) {
-  button.addEventListener('click', function() {
-      document.querySelectorAll('.inputContainer')[index].style.display = 'none';
-      document.querySelectorAll('.textInput')[index].value = ''; // Clear the input field
+  showInputButtons.forEach((button, index) => {
+    button.addEventListener('click', function() {
+      inputContainers[index].style.display = 'block';
+    });
   });
-});
 
-document.querySelectorAll('.submitButton').forEach(function(button, index) {
-  button.addEventListener('click', function() {
-      const inputText = document.querySelectorAll('.textInput')[index].value;
-      if (inputText) {
-          alert('Telah diedit dengan: ' + inputText);
-          document.querySelectorAll('.inputContainer')[index].style.display = 'none';
-          document.querySelectorAll('.textInput')[index].value = ''; // Clear the input field
-      } else {
-          alert('Text tidak boleh kosong.');
+  submitButtons.forEach((button, index) => {
+    button.addEventListener('click', function() {
+      const textInput = inputContainers[index].querySelector('.textInput');
+      if (textInput.value.trim() !== '') {
+        menuName.textContent = textInput.value;
       }
+      inputContainers[index].style.display = 'none';
+    });
   });
-});
 
-document.querySelectorAll('.showInputButtonTambah').forEach(function(button, index) {
-  button.addEventListener('click', function() {
-      document.querySelectorAll('.inputContainerTambah')[index].style.display = 'block';
-  });
-});
-
-document.querySelectorAll('.cancelButtonTambah').forEach(function(button, index) {
-  button.addEventListener('click', function() {
-      document.querySelectorAll('.inputContainerTambah')[index].style.display = 'none';
-      document.querySelectorAll('.textInputTambah')[index].value = ''; // Clear the input field
-  });
-});
-
-document.querySelectorAll('.submitButtonTambah').forEach(function(button, index) {
-  button.addEventListener('click', function() {
-      const inputText = document.querySelectorAll('.textInputTambah')[index].value;
-      if (inputText) {
-          alert('Telah ditambah: ' + inputText);
-          document.querySelectorAll('.inputContainerTambah')[index].style.display = 'none';
-          document.querySelectorAll('.textInputTambah')[index].value = ''; // Clear the input field
-      } else {
-          alert('Text tidak boleh kosong.');
-      }
+  cancelButtons.forEach((button, index) => {
+    button.addEventListener('click', function() {
+      inputContainers[index].style.display = 'none';
+    });
   });
 });
